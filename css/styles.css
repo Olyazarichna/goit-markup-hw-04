@@ -111,23 +111,26 @@ img {
   font-weight: 500;
   line-height: 1.14;
   text-decoration: none;
+  color: #757575;
 }
 
 .contact-email {
   display: inline-flex;
+  width: 16px;
+  height: 12px;
   margin: auto;
 
-  fill: #757575;
+  fill: currentColor;
 
   margin-right: 10px;
 }
-.item .contact:hover,
-.item .contact:focus {
-  background-color: var(--accent-color);
-}
-.item .contact:hover .contact-email,
-.item .contact:focus .contact-email {
-  fill: var(--accent-color);
+.contact-tel {
+  display: inline-flex;
+  margin: auto;
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 /* Section hero */
@@ -136,6 +139,9 @@ img {
   background-color: #c4c4c4;
   padding-top: 200px;
   padding-bottom: 200px;
+  max-width: 1600px;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.3)),
+    url(../images/heroimg.jpg);
 }
 .title {
   max-width: 650px;
@@ -196,6 +202,7 @@ img {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
+  padding-top: 30px;
 }
 .text {
   margin-top: 10px;
@@ -237,6 +244,18 @@ img {
 .work-list .list + .list {
   margin-left: 30px;
 }
+/* Icon */
+.benefits-list-icon {
+  display: flex;
+  padding: 25px 100px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+.icon-list {
+  /* display: inline-flex; */
+  width: 70px;
+  height: 70px;
+}
 
 /* Our team */
 
@@ -277,7 +296,53 @@ img {
 .list.card + .list {
   margin-left: 30px;
 }
+.team-list {
+  display: flex;
+}
+.sotial-link-wrapper {
+  width: 44px;
+  height: 44px;
+}
+.team-social {
+  display: inline-flex;
+}
+.social-links {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+/* Постоянные клиенты */
 
+.client-title {
+  font-size: 36px;
+  width: 700;
+  line-height: 1.14;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.client-items {
+  display: flex;
+}
+.client-wrapper {
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.client-items .client-list + .client-list {
+  margin-left: 30px;
+}
+
+/* logo-icon */
+.client-icon {
+  width: 106px;
+  height: 60px;
+  fill: #afb1b8;
+}
+.client-hover:hover .client-icon {
+  fill: var(--accent-color);
+}
 /* Footer */
 
 .footer-logo {

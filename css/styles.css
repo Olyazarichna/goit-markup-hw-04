@@ -106,19 +106,34 @@ img {
 }
 .nav-list,
 .contact {
+  display: inline-flex;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
   text-decoration: none;
 }
-.contact {
-  color: #757575;
+
+.contact-email {
+  display: inline-flex;
+  margin: auto;
+
+  fill: #757575;
+
+  margin-right: 10px;
+}
+.item .contact:hover,
+.item .contact:focus {
+  background-color: var(--accent-color);
+}
+.item .contact:hover .contact-email,
+.item .contact:focus .contact-email {
+  fill: var(--accent-color);
 }
 
 /* Section hero */
 
 .hero {
-  background-color: var(--primary-color);
+  background-color: #c4c4c4;
   padding-top: 200px;
   padding-bottom: 200px;
 }

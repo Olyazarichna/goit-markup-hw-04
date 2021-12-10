@@ -86,6 +86,8 @@ img {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+}
+.nav-list.btn {
   color: var(--primary-text-color);
 }
 
@@ -171,6 +173,7 @@ img {
   line-height: 1.87;
   letter-spacing: 0.06em;
   border: 0;
+  border-radius: 4px;
 }
 
 .offer:hover,
@@ -314,9 +317,6 @@ img {
 }
 
 /* Постоянные клиенты */
-.client.section {
-  padding-top: 94px;
-}
 
 .client-title {
   font-size: 36px;
@@ -348,11 +348,16 @@ img {
   height: 60px;
   fill: #afb1b8;
 }
+.client-hover:hover,
+.client-hover:focus {
+  border-color: var(--accent-color);
+}
 
 .client-hover:hover .client-icon,
 .client-hover:focus .client-icon {
   fill: var(--accent-color);
 }
+
 /* Footer */
 
 .wrap {
@@ -426,6 +431,7 @@ img {
   line-height: 1.87;
 }
 .element {
+  display: block;
   text-decoration: none;
 }
 
@@ -487,11 +493,11 @@ img {
   margin-right: 30px;
   margin-left: 30px;
 }
-.list.flex-item:hover,
+/* .list.flex-item:hover,
 .list.flex-item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+} */
 
 .list.flex-item:nth-last-child(-n + 6) {
   margin-top: 30px;

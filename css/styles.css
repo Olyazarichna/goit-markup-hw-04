@@ -480,11 +480,11 @@ img {
 .features {
   border-bottom: 1px solid #ececec;
 }
-.flex-container {
+/* .flex-container {
   display: flex;
   width: 1170px;
   padding: 0;
-}
+} */
 .list-flex {
   display: flex;
   flex-wrap: wrap;
